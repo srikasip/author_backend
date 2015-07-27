@@ -7,11 +7,11 @@ class AuthorMethodsController < ApplicationController
     newAuthor.email = author
 
     if newAuthor.save
-      respsonseString = "Success"
+      responseString = "Success"
     else
-      respsonseString = "Failed"
+      responseString = "Failed"
     end
-    
+
     respond_to do |format|
       format.html { render :html => responseString }
       format.json { render :json => responseString }

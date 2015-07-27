@@ -1,7 +1,7 @@
 Authorbackend::Application.routes.draw do
   resources :emails
 
-  post "author_methods/subscribe", :as => :subscribe
+  get "author_methods/subscribe", :as => :subscribe
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
